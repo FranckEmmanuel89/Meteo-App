@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: white;
 }
 
 body {
@@ -15,6 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .main-container {
@@ -29,6 +29,7 @@ body {
 
 .input-container {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .city-input {
@@ -60,4 +61,90 @@ body {
   display: flex;
   border: none;
   cursor: pointer;
+  color: white;
+}
+.weather-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-date-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.current-date-text {
+  font-size: 13px;
+}
+.weather-summary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-tempeature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: rgb(211, 186, 186);
+}
+
+.weather-tempeature p {
+  font-size: 50px;
+  color: white;
+}
+
+.weather-humidity-wind {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(103, 103, 103);
+  padding-bottom: 30px;
+}
+
+.weather-humility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-humidity-text {
+  color: rgb(211, 186, 186);
+}
+
+.weather-wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-wind-text {
+  color: rgb(211, 186, 186);
+}
+
+.infos-container {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  color: rgb(128, 125, 125);
 }
