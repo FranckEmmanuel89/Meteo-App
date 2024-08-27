@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 body {
@@ -11,8 +12,52 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(15px);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main-container {
+  width: 300px;
+  height: 496px;
+  z-index: 1;
+  background-color: linear-gradient(to top, #00000026, #e1e1e126);
+  backdrop-filter: blur(100px);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.city-input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  background-color: rgba(243, 234, 234, 0.15);
+  outline: none;
+  font-weight: 400;
+  transition: 0.3s ease-out border;
+  padding-right: 45px;
+}
+
+.city-input:focus {
+  border: 3px solid rgb(0, 0, 0, 0.15);
+}
+
+.city-input::placeholder {
+  color: white;
+}
+
+.search-button {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  display: flex;
+  border: none;
+  cursor: pointer;
 }
