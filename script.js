@@ -1,17 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Obtenir la date actuelle
+
   const today = new Date();
-
-  // Options pour formater la date
   const options = { weekday: "short", day: "2-digit", month: "short" };
-
-  // Formater la date
   const formattedDate = today.toLocaleDateString("en-US", options);
 
-  // Insérer la date formatée dans la div
-  document.getElementById(
-    "currentDate"
-  ).innerHTML = `<span>${formattedDate}</span>`;
+  document.getElementById("currentDate").innerHTML = `<span>${formattedDate}</span>`;
 });
 
 const APIKEY = "16d5384ad1a1e13c8c9ff70890e9a1e9";
